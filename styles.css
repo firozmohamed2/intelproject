@@ -24,12 +24,10 @@ iframe {
 }
 
 .controls {
-    position: absolute;
-    bottom: 0;
     left: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
+    width: 640px; /* Same width as video player */
+    padding:10px 0px ;
+    background-color: rgba(0, 0, 0, 1);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -303,6 +301,10 @@ h3{
         overflow: hidden;
         border-radius: 8px;
     }
+
+    .controls{
+        width: 100%;
+        max-width: 100%;    }
 
     iframe {
         position: absolute;
