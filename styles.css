@@ -296,25 +296,31 @@ h3{
 
     .video-player {
         width: 100%;
+        max-width: 100%; /* Full width on mobile */
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        border-radius: 8px;
     }
 
     iframe {
-        height: auto;
-    }
-
-    .container{
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-    }
-    
-
-
-    /* Show collapsible button in mobile view */
-    .collapse-button {
-        display: none;
-        margin-top: 10px;
+        height: 100%;
+        border: none;
     }
 
-    /* Make the side panel initially hidden in mobile view */
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Collapse side panel for mobile view */
+   
+
     .side-panel {
         position: relative;
         width: 100%;
