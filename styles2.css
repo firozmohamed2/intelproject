@@ -224,7 +224,7 @@ display: none;
 
  /* Style for the side panel */
  .side-panel {
-    height: 100vh;
+/*     height: 100vh; */
     /* width: 250px; */
     position: fixed;
     top: 0;
